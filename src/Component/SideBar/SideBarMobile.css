@@ -1,0 +1,32 @@
+@import url("../../utils/colors.css");
+
+
+.SideBarMobile {
+     width: 0;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: var(--primary-color);
+     color: var(--navigation-color);
+     overflow-x: hidden;
+     transition: all 0.4s ease;
+}
+
+.cross {font-size: 30px; float: right; margin-right: 15px;}
+
+
+.SideBarMobile__Link {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.nav__Link {
+     text-decoration: none;
+     color: var(--navigation-color);
+     font-size: 15px;
+}
+
+.nav__Link:hover{color: var(--navigation-color);}

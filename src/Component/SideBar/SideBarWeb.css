@@ -1,0 +1,45 @@
+@import url("../../utils/colors.css");
+
+.SideBarWeb {
+     width: 15%;
+     height: 100vh;
+     box-sizing: border-box;
+     padding-top: 40px;
+     background-color: var(--primary-color);
+     
+}
+
+.sideBar__link {
+     width: 80%;
+     height: 40px;
+     box-sizing: border-box;
+     margin: 0 auto;
+     font-size: 25px;
+     text-decoration: none;
+     color: #FFF;
+     border-radius: 5px;
+}
+
+.sideBar__link:hover {color: #FFF; background-color: var(--navigation-color);}
+
+.sideBar__link p {
+     margin: 0;
+     margin-left: 10px;
+}
+
+@media (max-width: 1457px) {
+     .sideBar__link {
+          font-size: 1rem;
+          
+     }
+}
+
+
+@media (max-width: 767px) {
+     .SideBarWeb {
+          display: none;  
+     }
+
+}
+
+

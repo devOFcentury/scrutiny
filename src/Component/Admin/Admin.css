@@ -1,0 +1,28 @@
+
+.logo img {
+     width: 80px;
+     height: 80px;
+}
+
+.status__info p:first-child {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 15.05px;
+     line-height: 17px;
+}
+
+.status__info p:last-child {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 15.05px;
+     line-height: 17px;
+     color: #B3B3B3;
+     text-align: left;
+}
+
+@media (max-width: 767px) {
+     .logo {
+          margin: 0px auto;
+     }
+
+}
