@@ -3,13 +3,18 @@
 .SideBarWeb {
      width: 15%;
      height: 100vh;
+     position: fixed;
+     top: 0%;
+     left: 0;
      box-sizing: border-box;
-     padding-top: 40px;
+     padding-top: 7rem;
      background-color: var(--primary-color);
      
 }
 
-.sideBar__link {
+.active {background-color: var(--navigation-color);}
+
+.sideBar__link, .logout {
      width: 80%;
      height: 40px;
      box-sizing: border-box;
@@ -20,17 +25,43 @@
      border-radius: 5px;
 }
 
-.sideBar__link:hover {color: #FFF; background-color: var(--navigation-color);}
+
+
+.sideBar__link:hover, .logout:hover {color: #FFF; background-color: var(--navigation-color);}
 
 .sideBar__link p {
      margin: 0;
      margin-left: 10px;
 }
 
+.settings {
+     position: relative;
+     top: 9rem;
+}
+
+.logout {
+     /* display:  flex;
+     align-items: center;
+     justify-content: space-evenly; */
+     cursor: pointer;
+     margin-top: 10rem;
+     height: auto;
+     padding-left: 1.7rem;
+}
+
+.logout .logout__para {margin: 0; padding: 0px; display: inline; margin-left: 10px;}
+
+/* .logout__icon {margin: 0;padding: 0;} */
+
+
+
 @media (max-width: 1457px) {
      .sideBar__link {
           font-size: 1rem;
-          
+     }
+
+     .logout{
+          font-size: 1rem;
      }
 }
 

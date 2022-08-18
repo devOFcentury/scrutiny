@@ -1,0 +1,152 @@
+@import url("../../utils/colors.css");
+.row{
+     width: 100%;
+     height: 100vh;
+}
+
+.col-6{height: 100%;}
+
+.greenSpace{height: 100%;}
+
+
+/* partie formulaire */
+.signin {width: 80%;}
+
+.signin__logo {
+     display: flex;
+     justify-content: center;
+}
+
+form {width: 65%; margin: auto;}
+
+
+form input[type="text"], form input[type="password"], .signin-button  {
+     display: block;
+     margin: 0px auto;
+     width: 85%;
+     border: none;
+     border-radius: 10px;
+}
+
+form input[type="text"], form input[type="password"] {
+     background-color: #E1E1E1;
+     padding: 7px 0px 7px 20px ;
+     color: var(--primary-color);
+     font-size: 17px;
+     font-weight: 500;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+     outline: none;
+     border: 2px solid var(--primary-color);
+}
+
+form input[type="text"]::placeholder, form input[type="password"]::placeholder {
+     color: #000;
+     font-weight: 500;
+}
+
+.space-between {
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+}
+
+.link-forgot-password {
+     text-decoration: none;
+     color: black;
+}
+
+.link-forgot-password:hover{
+     color: var(--navigation-color);
+}
+
+
+
+@media (max-width: 547px)  {
+     .space-between{
+          display: initial;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+}
+
+/* case à cocher */
+
+.signin-label{
+     display: block;
+     position: relative;
+     /* padding-left: 35px; */
+     /* margin-bottom: 12px; */
+     cursor: pointer;
+     /* font-size: 22px; */
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+ 
+
+.signin-label input[type="checkbox"] {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+
+}
+
+.checkmark{
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 20px;
+     width: 20px;
+     background-color: var(--primary-color);
+}
+
+.checkmark:after {
+     content: "";
+     position: absolute;
+     display: none;
+}
+
+.signin-label input[type="checkbox"]:checked ~ .checkmark:after {
+     display: block;
+}
+
+.signin-label .checkmark:after {
+     left: 9px;
+     top: 5px;
+     width: 5px;
+     height: 10px;
+     border: solid white;
+     border-width: 0 3px 3px 0;
+     -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+
+.label-text {
+     margin-left: 30px;
+}
+
+/* fin case à cocher */
+
+.signin-button{
+     background-color: var(--primary-color); 
+     color: #FFF; 
+     border: none;
+     padding: 8px;
+     
+}
+
+@media (max-width: 1169px) {
+     .image-part{display: none;}
+
+     .form-part{
+          width: 100%;
+     }
+}
