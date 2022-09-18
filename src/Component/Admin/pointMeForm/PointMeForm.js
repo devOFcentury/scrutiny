@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {collection, getDocs, updateDoc, doc} from 'firebase/firestore';
 import { db } from '../../../firebaseConfig';
 import {BsFillTelephoneFill} from 'react-icons/bs'
-import './pointMeForm.css';
+import './PointMeForm.css';
 
 const PointMeForm = () => {
 
