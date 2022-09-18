@@ -1,0 +1,12 @@
+.Acceuil {
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+
+}
+
+
+@media (max-width: 767px) {
+     .Acceuil{
+          grid-template-columns: 1fr;
+     }
+}

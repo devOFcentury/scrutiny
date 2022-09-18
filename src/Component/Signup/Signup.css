@@ -1,0 +1,99 @@
+@import url("../../utils/colors.css");
+.row{
+     width: 100%;
+     height: 100vh;
+}
+
+.col-6{height: 100%;}
+
+.greenSpace{height: 100%;}
+
+
+/* partie formulaire */
+.signup {width: 80%;}
+
+.signup__logo {
+     display: flex;
+     justify-content: center;
+}
+
+form {width: 65%; margin: auto;}
+
+
+form input[type="text"], form input[type="password"], form input[type="email"], .signup-button  {
+     display: block;
+     margin: 0px auto;
+     width: 85%;
+     border: none;
+     border-radius: 10px;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"] {
+     background-color: #E1E1E1;
+     padding: 7px 0px 7px 20px ;
+     color: var(--primary-color);
+     font-size: 17px;
+     font-weight: 500;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus, form input[type="email"]:focus {
+     outline: none;
+     border: 2px solid var(--primary-color);
+}
+
+form input[type="text"]::placeholder, form input[type="password"]::placeholder, form input[type="email"]::placeholder {
+     color: #000;
+     font-weight: 500;
+}
+
+.space-between {
+     display: flex;
+     justify-content: space-between;
+}
+
+.route-to-login {
+     text-decoration: none; 
+     color: var(--primary-color); 
+     font-size: 17px;
+     display: block;
+     float: right;
+     margin-right: 40px;
+     margin-top: 10px;
+     font-weight: 500;
+}
+
+.route-to-login:hover{
+     text-decoration: none;
+     color: var(--navigation-color);
+
+}
+
+
+.signup-button{
+     background-color: var(--primary-color); 
+     color: #FFF; 
+     border: none;
+     padding: 8px;
+     
+}
+
+@media (max-width: 547px)  {
+     .space-between{
+          display: initial;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+}
+
+
+
+
+@media (max-width: 1169px) {
+     .image-part{display: none;}
+
+     .form-part{
+          width: 100%;
+     }
+}
