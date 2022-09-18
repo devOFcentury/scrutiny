@@ -1,9 +1,9 @@
-import React, {useRef, forwardRef, useEffect} from 'react';
+import React, {useRef, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './SideBarMobile.css'
 
 
-const SideBarMobile = forwardRef(({dataSideBar, shouldBeDisplay, setShouldBeDisplay, logout}, ref) => {
+const SideBarMobile = ({dataSideBar, shouldBeDisplay, setShouldBeDisplay, logout}) => {
 
      const sideBarMobileRef= useRef();
 
@@ -32,7 +32,7 @@ const SideBarMobile = forwardRef(({dataSideBar, shouldBeDisplay, setShouldBeDisp
                     ))
                }
 
-               <div onClick={logout}>
+               <div onClick={logout} style={{cursor: 'pointer'}}>
                     <p>Logout</p>
                </div>
           </div>
@@ -40,7 +40,7 @@ const SideBarMobile = forwardRef(({dataSideBar, shouldBeDisplay, setShouldBeDisp
 
     </div>
   )
-})
+}
 
 
 

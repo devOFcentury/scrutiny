@@ -1,0 +1,12 @@
+.Membres{
+     padding-top: 20px;
+}
+
+.Membres-button{
+     background-color: var(--primary-color);
+     color: #FFF;
+     padding: 6px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+}

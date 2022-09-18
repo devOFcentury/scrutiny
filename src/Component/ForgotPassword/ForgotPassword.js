@@ -70,6 +70,7 @@ const Login = () => {
                     <div className="mb-3">
                       <input 
                         type="text" 
+                        className='forgotPassword-email'
                         placeholder='Email'
                         name='email'
                         value={email}

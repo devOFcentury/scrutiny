@@ -16,6 +16,7 @@ import Retard from '../Retard/Retard';
 import Absences from '../Absences/Absences';
 import Compteur from '../Compteur/Compteur';
 import Settings from '../Settings/Settings';
+import Membres from '../Membres/Membres';
 import './Admin.css'
 
 const Admin = () => {
@@ -74,7 +75,7 @@ const Admin = () => {
           <header className='shadow d-flex  flex-md-row justify-content-md-between align-items-center'>
 
                     <div className="burger-menu d-md-none align-self-center ms-2">
-                         <GiHamburgerMenu size={25} onClick={displaySideBar}  />
+                         <GiHamburgerMenu size={25} onClick={displaySideBar} style={{cursor: 'pointer'}}  />
                     </div>
 
                     <div className="logo align-self-center mx-md-0 ms-md-5">
@@ -89,7 +90,7 @@ const Admin = () => {
                          </div>
                          <div className="status__info">
                               <p>{userData.length !== 0 ? `${userData[0]?.firstName} ${userData[0]?.lastName}`: 'Loading...'}</p>
-                              <p>{userData.length !== 0 ? `${userData[0]?.status}`: 'Loading...'}</p>
+                              <p>{userData.length !== 0 ? `${userData[0]?.type}`: 'Loading...'}</p>
                          </div>
                     </div>
                     
@@ -108,6 +109,7 @@ const Admin = () => {
                     <Route path='/absences' element={<Absences/>} />
                     <Route path='/compteur' element={<Compteur/>} />
                     <Route path='/settings' element={<Settings/>} />
+                    <Route path='/membres' element={<Membres/>} />
                     
                </Routes>
           </div>
@@ -116,4 +118,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+export default React.memo(Admin);

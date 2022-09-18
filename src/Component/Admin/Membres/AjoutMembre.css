@@ -1,0 +1,91 @@
+.overlay{
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.5);
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.modal-form{
+     width: 60%;
+     /* height: 90%; */
+     border-radius: 10px;
+     padding: 20px 0px;
+     background-color: #FFF;
+     /* margin: auto; */
+     /* margin-top: 3%; */
+}
+
+@media (max-width: 500px){
+     .modal-form{width: 90%;}
+}
+
+.AjoutMembre-cross{
+     float: right;
+     font-size: 1.5rem;
+     cursor: pointer;
+     margin-right: 20px;
+}
+
+.AjoutMembre-form{clear: both;}
+
+.AjoutMembre-form .AjoutMembre-text, 
+.AjoutMembre-form .AjoutMembre-password, 
+.AjoutMembre-form .AjoutMembre-email, 
+.AjoutMembre-button, 
+.AjoutMembre-form .AjoutMembre-type, 
+.AjoutMembre-form .AjoutMembre-tel,
+.AjoutMembre-form .AjoutMembre-status  {
+     display: block;
+     margin: 0px auto;
+     width: 85%;
+     border: none;
+     border-radius: 10px;
+}
+
+.AjoutMembre-form .AjoutMembre-text, 
+.AjoutMembre-form .AjoutMembre-password, 
+.AjoutMembre-form .AjoutMembre-email, 
+.AjoutMembre-form .AjoutMembre-type, 
+.AjoutMembre-form .AjoutMembre-tel,
+.AjoutMembre-form .AjoutMembre-status {
+     background-color: #E1E1E1;
+     padding: 7px 0px 7px 20px ;
+     color: var(--primary-color);
+     font-size: 17px;
+     font-weight: 500;
+}
+
+.AjoutMembre-form .AjoutMembre-text:focus, 
+.AjoutMembre-form .AjoutMembre-password:focus, 
+.AjoutMembre-form .AjoutMembre-email:focus, 
+.AjoutMembre-form .AjoutMembre-tel:focus,
+.AjoutMembre-form .AjoutMembre-status:focus {
+     outline: none;
+     border: 2px solid var(--primary-color);
+}
+
+.AjoutMembre-form .AjoutMembre-text::placeholder, 
+.AjoutMembre-form .AjoutMembre-password::placeholder, 
+.AjoutMembre-form .AjoutMembre-email::placeholder, 
+.AjoutMembre-form .AjoutMembre-tel::placeholder,
+.AjoutMembre-form .AjoutMembre-status::placeholder {
+     color: #000;
+     font-weight: 500;
+}
+
+.AjoutMembre-button{
+     background-color: var(--primary-color); 
+     color: #FFF; 
+     border: none;
+     padding: 8px;
+     text-transform: uppercase;
+     
+}
+

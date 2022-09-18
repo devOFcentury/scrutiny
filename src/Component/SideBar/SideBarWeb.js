@@ -29,27 +29,30 @@ const SideBarWeb = ({dataSideBar, logout}) => {
                               <p>{data.title}</p>
                          </NavLink>
                     ) : (
-                         <NavLink 
+                         
+                         
+                              <NavLink 
                               to={data.path} 
                               className={({isActive}) =>
                                    isActive ? `active sideBar__link ${data.path === 'settings' && 'settings'} my-3 d-flex align-items-center ps-md-2 ps-lg-4`: `sideBar__link ${data.path === 'settings' && 'settings'} my-3 d-flex align-items-center ps-md-2 ps-lg-4`
                               } 
                               key={index}
-                         >
-                              {data.icon}
+                              >
+                                   {data.icon}
 
-                              {/* <div className="nav-link"> */}
-                                   {/* <Link to={data.path} className="nav-link ">{data.title}</Link> */}
-                              {/* </div> */}
-                              <p>{data.title}</p>
-                         </NavLink>
+                                   {/* <div className="nav-link"> */}
+                                        {/* <Link to={data.path} className="nav-link ">{data.title}</Link> */}
+                                   {/* </div> */}
+                                   <p>{data.title}</p>
+                              </NavLink>
+                         
                     )
                )
           }
 
-          <div className="logout" onClick={logout}>
-               <FiLogOut className='logout__icon' />
-               <p className='logout__para'>Logout</p>
+          <div className="logout d-flex align-items-center ps-md-2 ps-lg-4" onClick={logout}>
+               <FiLogOut  />
+               <p >Logout</p>
           </div>
           
     </div>
