@@ -20,7 +20,7 @@
 form {width: 65%; margin: auto;}
 
 
-form input[type="text"], form input[type="password"], .signin-button  {
+form .login-name, form .login-password, .signin-button  {
      display: block;
      margin: 0px auto;
      width: 85%;
@@ -28,7 +28,7 @@ form input[type="text"], form input[type="password"], .signin-button  {
      border-radius: 10px;
 }
 
-form input[type="text"], form input[type="password"] {
+form .login-name, form .login-password {
      background-color: #E1E1E1;
      padding: 7px 0px 7px 20px ;
      color: var(--primary-color);
@@ -36,12 +36,12 @@ form input[type="text"], form input[type="password"] {
      font-weight: 500;
 }
 
-form input[type="text"]:focus, form input[type="password"]:focus {
+form .login-name:focus, form .login-password:focus {
      outline: none;
      border: 2px solid var(--primary-color);
 }
 
-form input[type="text"]::placeholder, form input[type="password"]::placeholder {
+form .login-name::placeholder, form .login-password::placeholder {
      color: #000;
      font-weight: 500;
 }
@@ -89,7 +89,7 @@ form input[type="text"]::placeholder, form input[type="password"]::placeholder {
 
  
 
-.signin-label input[type="checkbox"] {
+.signin-label .login-checkbox {
      position: absolute;
      opacity: 0;
      cursor: pointer;
@@ -113,7 +113,7 @@ form input[type="text"]::placeholder, form input[type="password"]::placeholder {
      display: none;
 }
 
-.signin-label input[type="checkbox"]:checked ~ .checkmark:after {
+.signin-label .login-checkbox:checked ~ .checkmark:after {
      display: block;
 }
 

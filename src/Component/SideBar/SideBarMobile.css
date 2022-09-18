@@ -11,9 +11,10 @@
      color: var(--navigation-color);
      overflow-x: hidden;
      transition: all 0.4s ease;
+     z-index: 1;
 }
 
-.cross {font-size: 30px; float: right; margin-right: 15px;}
+.cross {font-size: 30px; float: right; margin-right: 15px; cursor: pointer;}
 
 
 .SideBarMobile__Link {
@@ -30,3 +31,7 @@
 }
 
 .nav__Link:hover{color: var(--navigation-color);}
+
+@media (min-width: 768px) {
+     .SideBarMobile{width: 0; display: none;}
+}

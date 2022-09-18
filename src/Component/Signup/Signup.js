@@ -160,7 +160,8 @@ const Signup = () => {
                     }
                     <div className="mb-3">
                       <input 
-                        type="text" 
+                        type="text"
+                        className='signup-text'
                         placeholder='Last name'
                         name='lastName'
                         value={lastName}
@@ -171,6 +172,7 @@ const Signup = () => {
                     <div className="mb-3">
                       <input 
                         type="text" 
+                        className='signup-text'
                         placeholder='First name' 
                         name='firstName'
                         value={firstName}
@@ -181,6 +183,7 @@ const Signup = () => {
                     <div className="mb-3">
                       <input 
                         type="email" 
+                        className='signup-email'
                         placeholder='Email'
                         name='email'
                         value={email}
@@ -191,6 +194,7 @@ const Signup = () => {
                     <div className="mb-3">
                       <input
                         type="password"
+                        className='signup-password'
                         placeholder='Password'
                         name='password'
                         value={password}
@@ -201,6 +205,7 @@ const Signup = () => {
                     <div className="mb-3">
                       <input 
                         type="password" 
+                        className='signup-password'
                         placeholder='Confirm password' 
                         name='confirmPassword'
                         value={confirmPassword}

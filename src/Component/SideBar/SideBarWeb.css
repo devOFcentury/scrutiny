@@ -9,7 +9,21 @@
      box-sizing: border-box;
      padding-top: 7rem;
      background-color: var(--primary-color);
+     overflow-y: auto;
      
+}
+
+.SideBarWeb::-webkit-scrollbar{
+     width: 7px;
+}
+
+.SideBarWeb::-webkit-scrollbar-track{
+     background-color: #FFF;
+}
+
+.SideBarWeb::-webkit-scrollbar-thumb{
+     background-color: var(--navigation-color);
+     border-radius: 20px;
 }
 
 .active {background-color: var(--navigation-color);}
@@ -29,7 +43,7 @@
 
 .sideBar__link:hover, .logout:hover {color: #FFF; background-color: var(--navigation-color);}
 
-.sideBar__link p {
+.sideBar__link p, .logout p {
      margin: 0;
      margin-left: 10px;
 }
@@ -45,11 +59,11 @@
      justify-content: space-evenly; */
      cursor: pointer;
      margin-top: 10rem;
-     height: auto;
-     padding-left: 1.7rem;
+     /* height: auto; */
+     /* padding-left: 1.7rem; */
 }
 
-.logout .logout__para {margin: 0; padding: 0px; display: inline; margin-left: 10px;}
+/* .logout .logout__para {margin: 0; padding: 0px; display: inline; margin-left: 10px;} */
 
 /* .logout__icon {margin: 0;padding: 0;} */
 

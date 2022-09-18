@@ -89,7 +89,8 @@ const Login = () => {
                     }
                     <div className="mb-3">
                       <input 
-                        type="text" 
+                        type="text"
+                        className='login-name'
                         placeholder='Login'
                         name='email'
                         value={email}
@@ -100,6 +101,7 @@ const Login = () => {
                     <div className="mb-3">
                       <input 
                         type="password" 
+                        className='login-password'
                         placeholder='Password'
                         name='password'
                         value={password}
@@ -110,7 +112,7 @@ const Login = () => {
                     <div className="mb-3 space-between">
                       <label className='signin-label'>
                         <span className='label-text'>remember me</span>
-                        <input type="checkbox" />
+                        <input type="checkbox" className='login-checkbox' />
                         <span className="checkmark"></span>
                       </label>
 

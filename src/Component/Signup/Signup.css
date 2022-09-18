@@ -20,7 +20,7 @@
 form {width: 65%; margin: auto;}
 
 
-form input[type="text"], form input[type="password"], form input[type="email"], .signup-button  {
+form .signup-text, form .signup-password, form .signup-email, .signup-button  {
      display: block;
      margin: 0px auto;
      width: 85%;
@@ -28,7 +28,7 @@ form input[type="text"], form input[type="password"], form input[type="email"], 
      border-radius: 10px;
 }
 
-form input[type="text"], form input[type="password"], form input[type="email"] {
+form .signup-text, form .signup-password, form .signup-email {
      background-color: #E1E1E1;
      padding: 7px 0px 7px 20px ;
      color: var(--primary-color);
@@ -36,12 +36,12 @@ form input[type="text"], form input[type="password"], form input[type="email"] {
      font-weight: 500;
 }
 
-form input[type="text"]:focus, form input[type="password"]:focus, form input[type="email"]:focus {
+form .signup-text:focus, form .signup-password:focus, form .signup-email:focus {
      outline: none;
      border: 2px solid var(--primary-color);
 }
 
-form input[type="text"]::placeholder, form input[type="password"]::placeholder, form input[type="email"]::placeholder {
+form .signup-text::placeholder, form .signup-password::placeholder, form .signup-email::placeholder {
      color: #000;
      font-weight: 500;
 }
